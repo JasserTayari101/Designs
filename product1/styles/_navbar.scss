@@ -1,0 +1,49 @@
+.navbar{
+    height: 15vh;
+    background-color: rgb(248, 232, 232);
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: 10vh;
+    
+    .shop,.settings{
+        padding: 4vh 5vw;
+        li{
+            font-size: 1.3vw;
+            display: inline-block;
+            padding: 0 1vw;
+            a{
+                text-decoration: none;
+                font-family: 'Josefin Sans', sans-serif;
+                color: $mainColor;
+                &:hover{
+                    background-color: rgba(99, 74, 74, 0.61);
+                    border-radius: 15px;
+                    padding: 5px;
+                    transition: .5s;
+                }
+            }
+            input{
+                width: 7vw;
+                &::placeholder{
+                    font-family: 'Josefin Sans',sans-serif;
+                    font-size: 1.3vw;
+                    color: $mainColor;
+                    opacity: .8;
+                }
+            }
+        }
+    }
+
+    .logo{
+        text-align: center;
+        img{
+        max-width: 100%;
+        max-height: 100%;
+        padding: 1vh 1vw;
+        }
+    }
+    .settings{
+        text-align: end;
+    }
+    
+}
