@@ -41,6 +41,30 @@
         .reviews{
             margin: 10px 0;
         }
+        .description{
+            line-height: 4vh;
+        }
+        .quantity-box{
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            
+            .count{
+                padding: 0 5px;
+                button{
+                    background-color: white;
+                    border: 1px solid $mainColor;
+                    border-radius: 2px;
+                }
+            }
+        }
+        button[type="submit"]{
+            margin-top: 20px;
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            border: 2px solid $mainColor;
+        }
     }
 }
 
