@@ -69,11 +69,40 @@
   grid-template-columns: 1fr 1fr;
   margin: 5vh 4vw;
 }
+.product .product-images {
+  border: 1px rgb(34, 32, 32) solid;
+  padding: 5px;
+}
 .product .product-images img {
   max-width: 100%;
   max-height: 100%;
 }
-.product .product-images .rest img {
-  opacity: 0.5;
+.product .product-images .rest button {
+  opacity: 0.8;
+  transition: opacity 0.1s;
+}
+.product .product-images .rest button img {
   display: inline-block;
+  max-width: 10vw;
+  max-height: 8vh;
+}
+.product .product-images .rest button:hover {
+  opacity: 1;
+}
+.product .product-description {
+  padding: 20px 50px 5px;
+  text-align: justify;
+  font-family: "Josefin Sans", sans-serif;
+}
+.product .product-description h1 {
+  margin-bottom: 30px;
+}
+.product .product-description h1 span {
+  border-bottom: 3px rgb(34, 32, 32) solid;
+}
+.product .product-description .price {
+  margin-bottom: 20px;
+}
+.product .product-description .reviews {
+  margin: 10px 0;
 }/*# sourceMappingURL=style.css.map */

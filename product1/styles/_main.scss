@@ -2,15 +2,55 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 5vh 4vw;
-
+    //---------------product images----------------------------
     .product-images{
+        border: 1px $mainColor solid;
+        // border-radius: 15px;
+        padding: 5px;
         img{
             max-width: 100%;
             max-height: 100%;
         }
-        .rest img{
-            opacity: .5;
-            display: inline-block;
+        .rest button{
+            opacity: .8;
+            img{
+                display: inline-block;
+                max-width: 10vw;
+                max-height: 8vh;
+            }
+            transition: opacity .1s;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+    //---------------product description---------------------
+    .product-description{
+        padding: 20px 50px 5px;
+        text-align: justify;      
+        font-family: $primaryFont;
+        h1{
+            margin-bottom: 30px;
+            span{
+                border-bottom: 3px $mainColor solid;
+            }
+        }
+        .price{
+            margin-bottom: 20px;
+        }
+        .reviews{
+            margin: 10px 0;
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
