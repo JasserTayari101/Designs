@@ -33,24 +33,29 @@
 }
 .navbar .shop li input, .navbar .settings li input {
   width: 7vw;
+  padding: 4px;
+  border-radius: 15px;
 }
 .navbar .shop li input::-moz-placeholder, .navbar .settings li input::-moz-placeholder {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.3vw;
   color: rgb(34, 32, 32);
   opacity: 0.8;
+  padding-left: 3px;
 }
 .navbar .shop li input:-ms-input-placeholder, .navbar .settings li input:-ms-input-placeholder {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.3vw;
   color: rgb(34, 32, 32);
   opacity: 0.8;
+  padding-left: 3px;
 }
 .navbar .shop li input::placeholder, .navbar .settings li input::placeholder {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.3vw;
   color: rgb(34, 32, 32);
   opacity: 0.8;
+  padding-left: 3px;
 }
 .navbar .logo {
   text-align: center;

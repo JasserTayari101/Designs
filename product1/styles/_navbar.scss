@@ -24,11 +24,14 @@
             }
             input{
                 width: 7vw;
+                padding: 4px;
+                border-radius: 15px;
                 &::placeholder{
                     font-family: $primaryFont;
                     font-size: 1.3vw;
                     color: $mainColor;
                     opacity: .8;
+                    padding-left: 3px;
                 }
             }
         }
