@@ -25,3 +25,20 @@ minus.addEventListener("click",()=>{
     if(current>0)
         count.textContent = current-1;
 })
+//------------------stars hover effect------------------------------
+var stars = Array.from(document.querySelectorAll(".reviews i") );
+var i = 1;
+stars.forEach(star=>{
+    const before_stars = stars.slice(0,i);
+    i++;
+    star.addEventListener("mouseover",()=>{
+        before_stars.forEach(before_star=>{
+            before_star.classList.add("active");
+        })
+    })
+    star.addEventListener("mouseleave",()=>{
+        before_stars.forEach(before_star=>{
+            before_star.classList.remove("active");
+        })
+    })
+});

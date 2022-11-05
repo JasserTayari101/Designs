@@ -40,6 +40,9 @@
         }
         .reviews{
             margin: 10px 0;
+            i.active{
+                color:yellow;
+            }
         }
         .description{
             line-height: 4vh;

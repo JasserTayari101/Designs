@@ -106,6 +106,9 @@
 .product .product-description .reviews {
   margin: 10px 0;
 }
+.product .product-description .reviews i.active {
+  color: yellow;
+}
 .product .product-description .description {
   line-height: 4vh;
 }
