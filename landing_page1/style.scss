@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$bgColor:#FDDA00;
+@font-face {
+    font-family: 'neuzeit';
+    src: url('assets/Neuzeit_ff/Neuzeit\ Grotesk\ Cond\ W01\ Black.otf');
+}
+body{
+    cursor: url('assets/cat.png'),auto;
+}
+.container{
+    display: flex;
+    min-height: 100vh;
+    aside.left{
+        flex-basis: 15%;
+        background-color: $bgColor;
+        #top img{
+            margin: 15px;
+            width: 80px;
+            height: 120px;
+        }
+        #bot{
+            position: fixed;
+            top: 40%;
+            left: 0;
+            height: 200px;
+            background-color: white;
+            text-decoration: none;
+            font-size: small;
+            font-family: 'neuzeit',sans-serif;
+            color: black;
+            div{
+                position: relative;
+                top: 60%;
+                transform: rotateZ(-90deg);
+            }
+            span{
+                padding-left: 30%;
+            }
+        }
+    }
+    main{
+        flex-basis: 80%;
+        background-color: $bgColor;
+        .text{
+            position: relative;
+            top: 45%;
+            
+            h2{
+                font-size: 1.5vw;
+                em{
+                    text-decoration: underline white 5px;
+                }
+            }
+            #h2-1{
+                position: absolute;
+                top: -20px;
+                left: 5px;
+            }
+            h1{
+                padding-left: 15%;
+                color: white;
+                font-size: 5vw;
+                letter-spacing: 9px;
+                font-weight: bold;
+            }
+            #h2-2{
+                position: absolute;
+                bottom: -20px;
+                right: 5px;
+            }
+
+            
+        }
+        @keyframes animatebear {
+            25%{
+                transform: rotateZ(45deg);
+            }
+            50%{
+                transform: rotateZ(0deg);
+            }
+            75%{
+                transform: rotateZ(-45deg);
+            }
+            100%{
+                transform: rotateZ(0deg);
+            }
+        }
+        #bear-img{
+            position: absolute;
+            top: 30;
+            left: 40%;
+            width: 15vw;
+            height: auto;
+            filter: opacity(.9);
+            animation: animatebear 3s linear infinite;
+        }
+    }
+
+    aside.right{
+        flex-basis: 5%;
+        .burger{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 15px;
+            transition: all .2s;
+            span{
+                width: 40px;
+                height: 5px;
+                background-color: black;
+                box-shadow: 2px 4px #10FF8A;
+            }
+            &:hover{
+                cursor: url('assets/cat-hover.png'),pointer;
+                gap: 12px;
+            }
+        }
+        #right-text{
+            white-space: nowrap;
+            text-decoration: underline 5px #10FF8A;
+            font-family: 'neuzeit',sans-serif;
+            color: black;
+            position: absolute;
+            top: 50%;
+            font-size: small;
+            transform: rotateZ(90deg);
+        }
+    }
+}

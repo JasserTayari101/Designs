@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "neuzeit";
+  src: url("assets/Neuzeit_ff/Neuzeit Grotesk Cond W01 Black.otf");
+}
+body {
+  cursor: url("assets/cat.png"), auto;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+.container aside.left {
+  flex-basis: 15%;
+  background-color: #FDDA00;
+}
+.container aside.left #top img {
+  margin: 15px;
+  width: 80px;
+  height: 120px;
+}
+.container aside.left #bot {
+  position: fixed;
+  top: 40%;
+  left: 0;
+  height: 200px;
+  background-color: white;
+  text-decoration: none;
+  font-size: small;
+  font-family: "neuzeit", sans-serif;
+  color: black;
+}
+.container aside.left #bot div {
+  position: relative;
+  top: 60%;
+  transform: rotateZ(-90deg);
+}
+.container aside.left #bot span {
+  padding-left: 30%;
+}
+.container main {
+  flex-basis: 80%;
+  background-color: #FDDA00;
+}
+.container main .text {
+  position: relative;
+  top: 45%;
+}
+.container main .text h2 {
+  font-size: 1.5vw;
+}
+.container main .text h2 em {
+  -webkit-text-decoration: underline white 5px;
+          text-decoration: underline white 5px;
+}
+.container main .text #h2-1 {
+  position: absolute;
+  top: -20px;
+  left: 5px;
+}
+.container main .text h1 {
+  padding-left: 15%;
+  color: white;
+  font-size: 5vw;
+  letter-spacing: 9px;
+  font-weight: bold;
+}
+.container main .text #h2-2 {
+  position: absolute;
+  bottom: -20px;
+  right: 5px;
+}
+@-webkit-keyframes animatebear {
+  25% {
+    transform: rotateZ(45deg);
+  }
+  50% {
+    transform: rotateZ(0deg);
+  }
+  75% {
+    transform: rotateZ(-45deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes animatebear {
+  25% {
+    transform: rotateZ(45deg);
+  }
+  50% {
+    transform: rotateZ(0deg);
+  }
+  75% {
+    transform: rotateZ(-45deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+.container main #bear-img {
+  position: absolute;
+  top: 30;
+  left: 40%;
+  width: 15vw;
+  height: auto;
+  filter: opacity(0.9);
+  -webkit-animation: animatebear 3s linear infinite;
+          animation: animatebear 3s linear infinite;
+}
+.container aside.right {
+  flex-basis: 5%;
+}
+.container aside.right .burger {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 15px;
+  transition: all 0.2s;
+}
+.container aside.right .burger span {
+  width: 40px;
+  height: 5px;
+  background-color: black;
+  box-shadow: 2px 4px #10FF8A;
+}
+.container aside.right .burger:hover {
+  cursor: url("assets/cat-hover.png"), pointer;
+  gap: 12px;
+}
+.container aside.right #right-text {
+  white-space: nowrap;
+  -webkit-text-decoration: underline 5px #10FF8A;
+          text-decoration: underline 5px #10FF8A;
+  font-family: "neuzeit", sans-serif;
+  color: black;
+  position: absolute;
+  top: 50%;
+  font-size: small;
+  transform: rotateZ(90deg);
+}/*# sourceMappingURL=style.css.map */
